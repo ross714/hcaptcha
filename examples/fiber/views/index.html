@@ -1,0 +1,19 @@
+<html>
+
+<head>
+  <title>hCaptcha Demo</title>
+  <script src="https://hcaptcha.com/1/api.js" async defer></script>
+</head>
+
+<body>
+  <form action="/submit" method="POST">
+    <input type="text" id="username" placeholder="Username" required />
+    <input type="password" id="password" placeholder="Password" required />
+
+    <div class="h-captcha" data-sitekey="site_key"></div>
+    <br />
+    <input type="submit" value="Submit" />
+  </form>
+</body>
+
+</html>
