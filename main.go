@@ -1,4 +1,4 @@
-package test
+package hcaptcha
 
 import (
 	"encoding/json"
