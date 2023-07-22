@@ -1,5 +1,7 @@
 # Go-hCaptcha
 
+[![go ref](https://pkg.go.dev/badge/github.com/ross714/hcaptcha.svg)](https://pkg.go.dev/github.com/ross714/hcaptcha)
+
 Simple [hCaptcha](https://www.hcaptcha.com/) middleware written in Go, using fasthttp, which is up to 10x faster than net/http. 
 
 This package works with any framework, since it only handles the verification.
