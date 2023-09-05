@@ -14,7 +14,9 @@ func main() {
 	})
 
 	app.Get("/", func(c *fiber.Ctx) error {
-		return c.Render("index", fiber.Map{})
+		return c.Render("index", fiber.Map{
+			"Sitekey": client.Sitekey,
+		})
 	})
 
 	app.Post("/submit", func(c *fiber.Ctx) error {
@@ -22,11 +24,11 @@ func main() {
 		res := client.Verify(token)
 
 		if res {
-			return c.SendString("success")
+			return c.SendString("Success")
 		} else {
-			return c.SendString("failed")
+			return c.SendString("Failed")
 		}
 	})
 
-	app.Listen(":3000")
+	app.Listen(":5000")
 }
